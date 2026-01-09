@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday!</title>
+  <style>
+    body{
+      margin:0; min-height:100vh; display:grid; place-items:center;
+      background:linear-gradient(135deg,#0f172a,#1f2937);
+      color:#fff; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      padding:24px;
+    }
+    .card{
+      width:min(820px,100%);
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:24px;
+      padding:22px;
+      backdrop-filter:blur(10px);
+    }
+    h1{margin:0 0 10px;font-size:clamp(26px,3.4vw,40px)}
+    p{margin:0 0 16px;color:rgba(255,255,255,.8)}
+    .video{
+      width:100%;
+      aspect-ratio:16/9;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.15);
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+      background:rgba(0,0,0,.25);
+    }
+    iframe{width:100%;height:100%;border:0}
+    .hint{margin-top:10px;font-size:12px;color:rgba(255,255,255,.6)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1> Happy Birthday Khun Dopa Mean 🎂</h1>
+    <p>Wishing you a day full of love, laughter, and great memories ✨</p>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID_HERE?rel=0&playsinline=1"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="hint">Tip: Tap play to start the music (autoplay is usually blocked).</div>
+  </div>
+</body>
+</html>
